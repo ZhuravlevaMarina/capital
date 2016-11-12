@@ -1,8 +1,8 @@
 requirejs.config({
-    baseUrl: './public/js'
+    baseUrl: './js'
 });
 
-define(["jquery", "domReady", "swiper.min", "bootstrap"], function($) {
+define(["jquery", "domReady", "slick"], function($) {
     "use strict";
-
+    $('.main-banner').slick();
 });

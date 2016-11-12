@@ -2,21 +2,41 @@
   "title": "twig test",
   "includes": {
   "header": {
-    "logo": "logo",
-     "nav": [
-        {"name": "Home", "link": "#"},
-        {"name": "Calculator", "link": "calculator.html"},
-        {"name": "About", "link": "#"},
-        {"name": "Contacts", "link": "#"}
+    "logoUrl": "#",
+    logoImage: "logo.png",
+     "links": [
+        {"name": "Кредиты", "link": "#"},
+        {"name": "Отделения", "link": "#"},
+        {"name": "Акции", "link": "#"},
+        {"name": "Программа лояльности", "link": "#"},
+        {"name": "О компании", "link": "#",
+          submenu:[
+            {"name": "О нас", "link": "#"},
+            {"name": "Контакты", "link": "#"},
+            {"name": "Новости", "link": "#"},
+            {"name": "Вопросы", "link": "#"},
+            {"name": "Реквизиты", "link": "#"},
+            {"name": "Финансовая отчетность", "link": "#"},
+          ]
+        }
     ]
   },
-  "shmooter":{
-    "shmogo": "logo",
-    "shnav": [
-      {"name": "Home", "link": "#"},
-      {"name": "Calculator", "link": "calculator.html"},
-      {"name": "About", "link": "#"},
-      {"name": "Contacts", "link": "#"}
+  "footer":{
+    "copyrights": "&copy; Lombard Capital 2016",
+    "links": [
+      {"name": "Home", "url": "#"},
+      {"name": "Calculator", "url": "#"},
+      {"name": "About", "url": "#"}
+    ],
+    social: [
+      {name: "06-facebook", url: "#"},
+      {name: "vkontakte", url: "#"},
+      {name: "ok", url: "#"}
+    ],
+    "icons": [
+      {"link": "#", "url": "images/ok.png"},
+      {"link": "#", "url": "images/vk.png"},
+      {"link": "#", "url": "images/f.png"}
     ]
     }
   }

@@ -1,0 +1,19 @@
+.header{
+  display: flex;
+  flex-direction: row;
+.header-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-items: stretch;
+  &__item{
+    display: flex;
+     align-items: center;
+  }
+  a{
+    color: $colorWhite;
+    display: block;
+  }
+}
+}

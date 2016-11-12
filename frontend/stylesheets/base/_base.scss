@@ -1,0 +1,10 @@
+*,*:after,*:before{
+  box-sizing: border-box;
+}
+body{
+  min-width: $minWidth;
+  font: 16px/1.2 'PT Sans', Helvetica, sans-serif;
+}
+a{
+  text-decoration: none;
+}

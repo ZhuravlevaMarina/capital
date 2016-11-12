@@ -1,3 +1,17 @@
 {
-  "title" : "Homepage"
+  title: "Homepage",
+  slider:[
+    {image: 'banner.png', url: '#'},
+    {image: 'banner.png', url: '#'},
+    {image: 'banner.png', url: '#'}
+  ],
+  include: {
+    footer:{
+      title: 'homepage footer',
+      news: [
+        {images: '', text: ''}
+      ],
+      formTitle: 'hjvbgjhv'
+    }
+  }
 }

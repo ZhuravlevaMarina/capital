@@ -5,26 +5,33 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    {% block styles %}{% endblock %}
-    <script src="./js/require.js" data-main="{% block jsEntryPoint %}./js/index{% endblock %}"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    {% block styles %}
+
+    {% endblock %}
+    <script src="./js/require.js"
+            data-main="{% block jsEntryPoint %}./js/index{% endblock %}">
+
+    </script>
     <title>{% block title %}{{ title }} {% endblock %}</title>
 </head>
 <body>
     <div id="wrapper">
-
+        <header id="site-header">
         {% block header %}
             {% include './modules/_header.twig' with {header: includes.header} %}
         {% endblock %}
+        </header>
         <section id="main">
             {% block content %}
 
             {% endblock %}
         </section>
-
+        <footer id="site-footer">
         {% block footer %}
-            {% include './modules/_footer.twig' with {footer: includes.shmooter} %}
+            {% include './modules/_footer.twig' with {footer: include.footer} %}
         {% endblock %}
-
+        </footer>
     </div>
 
 </body>
